@@ -119,6 +119,15 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# to collect all the static files (only for production)
+# python manage.py collectstatic
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+
+
+# # Media settings
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 
 # Default primary key field type
